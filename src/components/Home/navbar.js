@@ -10,7 +10,7 @@ function Navbars() {
       <br />
       <Navbar style={{backgroundColor: "#59b256"}}>
         <Container>
-          <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">Sharmi</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/About">About</Nav.Link>
             <Nav.Link as={Link} to="/Skills">Skills</Nav.Link>

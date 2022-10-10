@@ -1,21 +1,23 @@
 import "./about.css";
 import Mern from "../../images/mern.png"
+import { Container } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div className="a">
+    <Container>
+      <div className="a">
       <div className="a-left">
        
         <div className="a-card">
-          <div>
+         
            <img
            src={Mern}
            
             alt=""
-            className="img1"
+            className="img"
           /> 
        
-          </div>
+         
           
          
         </div>
@@ -36,6 +38,8 @@ Enjoys the journey of learning new things...
        
       </div>
     </div>
+    </Container>
+    
   );
 };
 
