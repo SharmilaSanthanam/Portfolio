@@ -1,5 +1,5 @@
 .p {
-    width: 30%;
+    width: 50%;
     height: 40vh;
     margin: 20px 10px;
     border: 2px solid rgb(243, 242, 242);
@@ -30,12 +30,13 @@
   }
   
   .p:hover .p-img {
-    transform: translateY(-100%);
+    transform: translateY(-80%);
   }
   
   @media screen and (max-width: 480px) {
     .p {
-      width: 40%;
+      /* width: 40%; */
+      width:fit-content;
       height: 20vh;
     }
   }
