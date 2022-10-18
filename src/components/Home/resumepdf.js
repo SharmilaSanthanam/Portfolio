@@ -4,7 +4,7 @@ import Resume from "../../images/Resume.pdf";
 const ResumePdf = () => {
   return (
     <div> 
-       <a href={Resume} download>Click here to download RESUME!!!</a>
+       <a href={Resume} download style={{color:"green"}}>Click here to download RESUME!!!</a>
          <object width="100%" height="500" data={Resume} type="application/pdf">
         
          </object>

@@ -1,15 +1,15 @@
-.me-auto {
-    width: fit-content;
-    background-color: #59b256;
-  font-weight:600;
-  border-radius: 10px;
-  margin: 2%;
-  /* padding: 5%; */
-    
+.navbar {
+  position: fixed;
 }
-.menu-auto {
-  background-color: rgb(97, 212, 97);  
-  border-radius: 20px; 
-justify-content: center;
-align-content: center;
+
+.logo {
+  width: 40%;
+  color: #32CD32;
+
+}
+
+.ms-auto {
+  width: fit-content;
+  background-color: rgb(97, 212, 97);
+  border-radius: 10px;
 }

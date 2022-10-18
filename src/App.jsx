@@ -16,36 +16,21 @@ const App = () => {
   const darkMode = theme.state.darkMode;
   return (
     <BrowserRouter>
-    <>
-    
-   <Navbars/>
-   <Toggle />
-    <div
-      style={{
-        backgroundColor: darkMode ? "#222" : "white",
-        color: darkMode && "white",
-      }}
-    >
-      
-        <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/ResumePdf" element={<ResumePdf/>}/>
-           <Route path="/About" element={<About/>}/>
-          <Route path="/Skills" element={<Skills/>}/>
-          <Route path="/ProjectList" element={<ProjectList/>}/>
-          <Route path="/Experience" element={<Experience/>}/>
-          <Route path="/Contact" element={<Contact/>}/>
-        {/* <Navbars />
-      <Toggle />
-      <Home />
-      <About />
-      <ProjectList />
-      <Contact /> */}
-        </Routes>
-      
-     
-    </div>
-    </>
+      <>
+        <Navbars />
+        <Toggle />
+        <div style={{ backgroundColor: darkMode ? "#222" : "white", color: darkMode && "white", }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/ResumePdf" element={<ResumePdf />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Skills" element={<Skills />} />
+            <Route path="/ProjectList" element={<ProjectList />} />
+            <Route path="/Experience" element={<Experience />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </>
     </BrowserRouter>
   );
 };

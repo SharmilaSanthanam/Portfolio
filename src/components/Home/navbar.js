@@ -1,32 +1,45 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { Link } from "react-router-dom";
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap'
+import name from '../../images/name.png';
 import "./navbar.css";
 
 function Navbars() {
+
   return (
-    <>
-      {/* <br /> */}
-      {/* <Navbar style={{backgroundColor: "#59b256"}}> */}
-      <Navbar className="me-auto">
-        <Container >
-          <Navbar.Brand  as={Link} to="/" style={{color: "#008000"}}>Sharmila</Navbar.Brand>
-          <Nav className="menu-auto">
-          {/* <Nav className="me-auto"> */}
-            <Nav.Link as={Link} to="/About" className="Nav-link">About</Nav.Link>
-            <Nav.Link as={Link} to="/Skills">Skills</Nav.Link>
-            <Nav.Link as={Link} to="/ProjectList">Project</Nav.Link>
-            <Nav.Link as={Link} to="/Experience">Experience</Nav.Link>
-            <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
+
+    <Navbar className="navbar navbar-light" style={{ backgroundColor: "#59b256" }} expand="lg">
+      <Container>
+        <LinkContainer to="/">
+          <Navbar.Brand >
+            <img className="logo" src={name} alt="Sharmila" />
+          </Navbar.Brand>
+        </LinkContainer>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">          
+              <LinkContainer to="/About">
+                <Nav.Link><b>About</b></Nav.Link>
+              </LinkContainer> 
+              <LinkContainer to="/Skills">
+                <Nav.Link><b>Skills</b></Nav.Link>
+              </LinkContainer> 
+              <LinkContainer to="/ProjectList">
+                <Nav.Link><b>Project</b></Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/Experience">
+                <Nav.Link><b>Experience</b></Nav.Link>
+              </LinkContainer>  
+              <LinkContainer to="/Contact">
+                <Nav.Link><b>Contact</b></Nav.Link>
+              </LinkContainer>  
+
+           
           </Nav>
-        </Container>
-      </Navbar>
+        </Navbar.Collapse>
+      </Container>
+       </Navbar>
 
-      {/* <br /> */}
-     
-    </>
-  );
+  )
 }
-
 export default Navbars;

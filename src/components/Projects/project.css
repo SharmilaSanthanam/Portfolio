@@ -1,5 +1,5 @@
 .p {
-    width: 50%;
+    width: 60%;
     height: 40vh;
     margin: 20px 10px;
     border: 2px solid rgb(243, 242, 242);
@@ -33,10 +33,3 @@
     transform: translateY(-80%);
   }
   
-  @media screen and (max-width: 480px) {
-    .p {
-      /* width: 40%; */
-      width:fit-content;
-      height: 20vh;
-    }
-  }

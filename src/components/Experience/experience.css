@@ -1,97 +1,15 @@
-.a {
-    height: 80vh;
-    /* display: flex; */
-    
-  }
-  
-  /* .a-left {
-    flex: 1;
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 90%;
-  }
-  
-  .a-right {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  } */
-  
-  /* .a-card.bg {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background-color: #59b256;
-  } */
-  
-  .a-card {
-    width: 30%;
-    height: 70vh;
-    border-radius: 10px;
- 
-   
-  }
-
   .img1 {
-justify-content: center;
-    width: 70%;
-    height: 30%;
-    margin-top: 60%;
-    
+    margin-top: 30%;
+    }
+   .img2 {
+   margin-top: 20%;
   }
-  
-  .img2 {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 70%;
-    height: 30%;
-    margin-top: 40%;
-  }
-
-  .img3 {
-    justify-content: center;
-    width: 70%;
-    height: 30%;
-    margin-top: 10%;
-    
-  }
-  
- 
-  /* .a-title {
-    font-weight: 400;
-    color: #59b256;
-  } */
-  
+    .img3 {
+     margin-top: 10%;
+     } 
   .a-desc{
       font-weight: 400;
       font-size: large;
       
   }  
-  @media screen and (max-width:480px) {
-      .a{
-        flex-direction: column;
-        text-align: center;
-        margin-top: 50px;
-      }
-  
-      .a-left {
-        width: 90%;
-      }
-  
-      .a-card {
-        height: 30vh;
-      }
-  
-      .a-card.bg {
-        display: none;
-      }
-  
-      .a-right{
-        padding: 20px;
-      }
-  }
+ 

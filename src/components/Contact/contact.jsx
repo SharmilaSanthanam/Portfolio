@@ -2,14 +2,12 @@ import "./contact.css";
 import Email from "../../images/email.png";
 import Address from "../../images/address.png";
 import { useRef, useState } from "react";
+import { Container, Row, Col } from 'react-bootstrap';
 import emailjs from "emailjs-com";
-// import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const formRef = useRef();
-  const [done, setDone] = useState(false)
-  // const theme = useContext(ThemeContext);
-  // const darkMode = theme.state.darkMode;
+  const [done, setDone] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,13 +30,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="c">
-      <div className="c-bg"></div>
-      <div className="c-wrapper">
-        <div className="c-left">
+   <Container>   
+       <Row>
+        <Col>
           <h1 className="c-title">Let's Connect</h1>
-          <div className="c-info">
-            
             <div className="c-info-item">
               <img className="c-icon" src={Email} alt="" />
               sharmilas2023@gmail.com
@@ -47,25 +42,22 @@ const Contact = () => {
               <img className="c-icon" src={Address} alt="" />
               Bangalore, India
             </div>
-          </div>
-        </div>
-        <div className="c-right">
+            </Col> 
+       <Col>
           <p className="c-desc">
-            <b> Get in touch...</b> 
-           
+            <b> Get in touch...</b>     
           </p>
           <form className="connect" ref={formRef} onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" name="user_name" /><br></br>
             <input  type="text" placeholder="Subject" name="user_subject" /><br></br>
             <input  type="text" placeholder="Email" name="user_email" /><br></br><br></br>
             <textarea rows="5" placeholder="Message" name="message" /><br></br>
-            <button>Submit</button>
+            <button className="submit">Submit</button>
             {done && "Thank you..."}
           </form>
-        </div>
-      </div>
-    </div>
+    </Col>
+    </Row>
+    </Container> 
   );
 };
-
 export default Contact;
