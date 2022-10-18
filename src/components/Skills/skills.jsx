@@ -4,7 +4,7 @@ import "./skills.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Htmlimage from "../../images/html2.png";
+import Htmlimage from "../../images/html1.png";
 import Cssimage from "../../images/css1.png";
 import Jsimage from "../../images/JS1.png";
 import Reactimage from "../../images/React1.png";
@@ -12,6 +12,7 @@ import Nodeimage from "../../images/Node2.png";
 import Mongoimage from "../../images/Mongo1.png";
 import Adobeimage from "../../images/adobe.png"
 import Gitimage from "../../images/git.jpg";
+import Aws from "../../images/aws.png";
 
 const dropIn = {
   hidden: {
@@ -49,34 +50,40 @@ const Skills = () => {
     >
       <Container>
         <Row>
-          <Col sm={3}>
+          <Col sm={4}>
+            
             <img src={Jsimage} alt="" className="a-img2" />
           </Col>
-          <Col sm={3}>
+          <Col sm={4}>
             <img
               src={Htmlimage} alt="" className="a-img1" />
           </Col>
-          <Col sm={3}>
+          <Col sm={4}>
             <img
               src={Cssimage} alt="" className="a-img3" />
           </Col>
-          <Col sm={3}>
-            <img
-              src={Adobeimage} alt="" className="a-img7" />
+        </Row>
+        <Row>
+          <Col sm={4}>
+            <img src={Reactimage} alt="" className="a-img4" />
+          </Col>
+          <Col sm={4}>
+            <img src={Nodeimage} alt="" className="a-img5" />
+          </Col>
+          <Col sm={4}>
+            <img src={Mongoimage} alt="" className="a-img6" />
           </Col>
         </Row>
         <Row>
-          <Col sm={3}>
-            <img src={Reactimage} alt="" className="a-img4" />
+          <Col sm={4}>
+            <img src={Aws} alt="" className="a-img7" />
           </Col>
-          <Col sm={3}>
-            <img src={Nodeimage} alt="" className="a-img5" />
+          <Col sm={4}>
+          <img src={Gitimage} alt="" className="a-img7" />
           </Col>
-          <Col sm={3}>
-            <img src={Mongoimage} alt="" className="a-img6" />
-          </Col>
-          <Col sm={3}>
-            <img src={Gitimage} alt="" className="a-img7" />
+          <Col sm={4}>
+          <img
+              src={Adobeimage} alt="" className="a-img7" />
           </Col>
         </Row>
       </Container>
