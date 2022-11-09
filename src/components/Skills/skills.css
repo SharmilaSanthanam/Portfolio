@@ -1,41 +1,13 @@
 .a-img1, .a-img2, .a-img3, .a-img4, .a-img5, .a-img6, .a-img7 {
-    width: clamp(50%, 500px, 50%);
-    height: min(60%,300px);
+    width: 80%;
+    height: 70%;
     margin-left: 20%;
       align-items: center;
       justify-content: center;
       text-align: center;
       overflow: scroll;
-      animation: move 30s ease-in-out infinite alternate;
+    }
 
+.a-img1, .a-img2, .a-img3, .a-img4{
+  margin-top: 50%;
 }
-.a-img1, .a-img2, .a-img3{
-  margin-top: 6%;
-}
-
- @keyframes move {
-    25% {
-      transform: translateY(80px);
-    }
-    50% {
-      transform: translateY(50px);
-    }
-    75% {
-      transform: translateY(20px);
-    }
-    100% {
-      transform: translateY(-20px);
-    }
-  }
-
-
-  @media screen and (min-width: 360px) {
-    .i {
-      flex-direction: column;     
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      height: 90%;
-    }
-  
-  }
