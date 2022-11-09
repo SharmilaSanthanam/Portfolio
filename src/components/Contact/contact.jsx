@@ -22,11 +22,13 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true)
+          
         },
         (error) => {
           console.log(error.text);
         }
       );
+      e.target.reset();
   };
 
   return (
@@ -52,7 +54,7 @@ const Contact = () => {
             <input  type="text" placeholder="Subject" name="user_subject" /><br></br>
             <input  type="text" placeholder="Email" name="user_email" /><br></br><br></br>
             <textarea rows="5" placeholder="Message" name="message" /><br></br>
-            <button className="submit">Submit</button>
+            <button type="submit" className="submit">Submit</button>
             {done && "Thank you..."}
           </form>
     </Col>
