@@ -1,5 +1,4 @@
-import React from 'react'
-import { motion } from "framer-motion";
+import React from 'react';
 import "./skills.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -13,81 +12,107 @@ import Mongoimage from "../../images/Mongo1.png";
 import Adobeimage from "../../images/adobe.png"
 import Gitimage from "../../images/git.jpg";
 import Aws from "../../images/aws.png";
-
-const dropIn = {
-  hidden: {
-    y: "-100vh",
-    opacity: 0,
-  },
-  visible: {
-    y: "0",
-    opacity: 1,
-    transition: {
-      duration: 0.1,
-      type:"spring" , 
-      damping: 30,
-      stiffness: 500,
-    },
-
-  },
-  exit: {
-    y: "100vh",
-    opacity: 0,
-  },
-};
+import Carousel from 'react-bootstrap/Carousel';
 
 const Skills = () => {
 
-
   return (
+   
+     <Container>
+      <Row>
+        <Col>
+    <Carousel indicators={false} pause={false}>
 
-    <motion.div
+      <Carousel.Item interval={1000}>
+        <img
+      className="a-img1"
+          src={Jsimage}
+          alt="JavaScript"
+        />
+        </Carousel.Item>
+       <Carousel.Item interval={1000}>
+     
+        <img
+         className="a-img2"
+          src={Reactimage}
+          alt="React"
+        />
+        </Carousel.Item>
+       <Carousel.Item interval={1000}>
+      
+        <img
+         className="a-img3"
+          src={Gitimage}
+          alt="Git"
+        />
 
-      variants={dropIn}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >
-      <Container>
-        <Row>
-          <Col sm={4}>
-            
-            <img src={Jsimage} alt="" className="a-img2" />
-          </Col>
-          <Col sm={4}>
-            <img
-              src={Htmlimage} alt="" className="a-img1" />
-          </Col>
-          <Col sm={4}>
-            <img
-              src={Cssimage} alt="" className="a-img3" />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={4}>
-            <img src={Reactimage} alt="" className="a-img4" />
-          </Col>
-          <Col sm={4}>
-            <img src={Nodeimage} alt="" className="a-img5" />
-          </Col>
-          <Col sm={4}>
-            <img src={Mongoimage} alt="" className="a-img6" />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={4}>
-            <img src={Aws} alt="" className="a-img7" />
-          </Col>
-          <Col sm={4}>
-          <img src={Gitimage} alt="" className="a-img7" />
-          </Col>
-          <Col sm={4}>
-          <img
-              src={Adobeimage} alt="" className="a-img7" />
-          </Col>
-        </Row>
-      </Container>
-    </motion.div>
-  )
+      </Carousel.Item>
+      </Carousel>
+      </Col>
+      <Col>
+      
+      <Carousel indicators={false} pause={false}>
+
+      <Carousel.Item interval={1000}>
+        <img
+         className="a-img1"
+          src={Htmlimage}
+          alt="HTML"
+        />
+        </Carousel.Item>
+       <Carousel.Item interval={1000}>
+        <img
+      className="a-img2"
+          src={Nodeimage}
+          alt="NodeJs"
+        />
+        </Carousel.Item>
+       <Carousel.Item interval={1000}>
+    
+        <img
+        className="a-img3"
+          src={Aws}
+          alt="AWS"
+        />
+
+      </Carousel.Item>
+      
+    </Carousel>
+    </Col>
+
+    <Col>
+      
+      <Carousel indicators={false} pause={false}>
+
+      <Carousel.Item interval={1000}>
+        <img
+          className="a-img1"
+          src={Cssimage}
+          alt="CSS"
+        />
+        </Carousel.Item>
+       <Carousel.Item interval={1000}>
+        <img
+       className="a-img4"
+          src={Mongoimage}
+          alt="MongoDB"
+        />
+        </Carousel.Item>
+       <Carousel.Item interval={1000}>
+    
+        <img
+         className="a-img3"
+          src={Adobeimage}
+          alt="AdobePhotoshop"
+        />
+
+      </Carousel.Item>
+      
+    </Carousel>
+    </Col>
+    </Row>
+    </Container>
+    
+  );
 }
 export default Skills;
