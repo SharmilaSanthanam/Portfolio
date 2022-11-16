@@ -1,7 +1,5 @@
 import "./home.css";
-import Nav from 'react-bootstrap/Nav';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from "react-router-dom";
 import Mern from "../../images/webdev1.jpg";
 
 const Home = () => {
@@ -17,7 +15,11 @@ const Home = () => {
               <div className="i-title-item">Full-Stack Web Developer</div><br></br><br></br>
             </div>
           </div>
-          <Nav.Link as={Link} to="/Resumepdf" className="resume">Click to view the Resume!!!</Nav.Link>
+          <div> 
+          <a href={"https://drive.google.com/file/d/1nJq0P8NmpkkyOQKDCoxz28xD1s8BSOGe/view?usp=share_link"} target="_blank" rel="noreferrer" className="resume" download style={{color:"green"}}>
+          Click to view the Resume!!!
+      </a>
+       </div>
         </Col>
         <Col>
           <div className="i-title">
