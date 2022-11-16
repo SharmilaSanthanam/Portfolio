@@ -7,7 +7,6 @@ import Experience from "./components/Experience/experience";
 import ProjectList from "./components/Home/ProjectList";
 import Toggle from "./components/Toggle/toggle";
 import Navbars from "./components/Home/navbar";
-import ResumePdf from "./components/Home/resumepdf";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { ThemeContext } from "./context";
 
@@ -22,7 +21,6 @@ const App = () => {
         <div style={{ backgroundColor: darkMode ? "#222" : "white", color: darkMode && "white", }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/ResumePdf" element={<ResumePdf />} />
             <Route path="/About" element={<About />} />
             <Route path="/Skills" element={<Skills />} />
             <Route path="/ProjectList" element={<ProjectList />} />
